@@ -1,4 +1,4 @@
-import './App.css';
+import './ChessApp.css';
 import { Chessboard } from "react-chessboard";
 
 function App() {
