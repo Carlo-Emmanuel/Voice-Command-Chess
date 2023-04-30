@@ -1,0 +1,180 @@
+*{
+    margin:  0;
+    padding = 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(84248.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+.logo{
+    height: auto;
+    width: auto;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 160px;
+    position: relative;
+    font-size: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    text-transform: capitalize;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20x 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #FFC0CB;
+    color: #000;
+    cursor: pointer;
+    background-color: #FFCCCB;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #FFC0CB;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+.aboutUsStyle{
+    width: 100%;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.aboutUsStyle p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: center;
+    margin: 50px;
+}
+
+.scrollable {
+    scroll-behavior: smooth;
+    height: calc(100% -150px);
+    width: 100%;
+    margin-top: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+.rulesStyle {
+    width: 100%;
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.rulesStyle p{
+    font-weight: 100;
+    line-height: 20px;
+    text-align: left;
+    margin: 50px;
+}
+.rulesStyle h1 {
+    margin: 10x;
+}
+.updateStyle{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: center;
+    margin: 50px;
+    color: #fff;
+}
+.my-textbox {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  position: top;
+}
+
+.my-textbox:focus {
+  outline: none;
+  border-color: #00a0e9;
+  box-shadow: 0 0 5px rgba(0, 160, 233, 0.8);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
