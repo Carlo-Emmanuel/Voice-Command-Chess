@@ -1,5 +1,6 @@
 import speech_recognition as sr
 import pyaudio
+import wave
 
 if __name__ == '__main__':
 
@@ -11,10 +12,8 @@ if __name__ == '__main__':
         recognizer.adjust_for_ambient_noise(source, 1)  # Adjust for ambient
         print("Say something!")
         audio = recognizer.listen(source)
-        #lst = audio.split()
-        #print(lst)
-        #stringAudio = str(audio)
-        #print(stringAudio)
+        if (audio == 'pink turtle'):
+            print('pink turtle')
     print("Runnnnnn")
     try:
         print("Analyzing voice data  " + (recognizer.recognize_google(audio, language='en-US')))
