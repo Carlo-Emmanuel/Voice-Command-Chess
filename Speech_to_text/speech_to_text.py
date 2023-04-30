@@ -76,6 +76,15 @@ if __name__ == "__main__":
     pos1 = resultList[2]
     pos2 = resultList[4]
 
+    #need to account for misinterpretations, like replace sea/see with C, replace night with knight or include night in pieceList
     print('piece:', piece)
     print('start position:', pos1)
     print('end position:', pos2)
+
+    pieceList = ['rook', 'knight', 'bishop', 'king', 'queen', 'pawn']
+
+    if piece in pieceList:
+        pass
+        #call move function, pass in pos1 and pos2
+        #verify piece is on pos1 and can move to pos2 in function
+        #may need helper function to determine if move is valid
